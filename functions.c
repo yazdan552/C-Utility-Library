@@ -4,7 +4,22 @@ int isPrime(int n) { return 0; }
 int factorial(int n) { return 0; }
 int reverseNumber(int n) { return 0; }
 int sumDigits(int n) { return 0; }
-int countDigits(int n) { return 0; }
+
+int countDigits(int n) 
+{
+    int count = 0;
+    if (n == 0)
+        return 1;
+    if (n < 0)
+        n = -n;
+    while (n != 0)
+    {
+        count++;
+        n /= 10;
+    }
+    return count;
+}
+
 int gcd(int a, int b) {
     if (a < 0) a = -a;
     if( b < 0) b = -b;
