@@ -1,5 +1,4 @@
 #include "functions.h"
-
 int isPrime(int n) { return 0; }
 int factorial(int n) { return 0; }
 int reverseNumber(int n)
