@@ -1,5 +1,6 @@
 #include "functions.h"
-
+#include <string.h>
+int isPrime(int n) { return 0; }
 int factorial(int n) { return 0; }
 int reverseNumber(int n)
 {
@@ -46,7 +47,22 @@ int gcd(int a, int b)
 
     return a;
 }
-void reverseString(char str[]) {}
+void reverseString(char str[])
+{
+    int start = 0;
+    int end = strlen(str) - 1;
+
+    while (start < end)
+    {
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+
+        start++;
+        end--;
+    }
+}
+
 int isOdd(int n) { return 0; }
 int isEven(int n)
 {
