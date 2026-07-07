@@ -1,5 +1,10 @@
 #include "functions.h"
+<<<<<<< HEAD
 
+=======
+#include <string.h>
+int isPrime(int n) { return 0; }
+>>>>>>> 4b5aec2 (Implement reverseString)
 int factorial(int n) { return 0; }
 int reverseNumber(int n) { return 0; }
 int sumDigits(int n) { return 0; }
@@ -35,7 +40,26 @@ int gcd(int a, int b)
 
     return a;
 }
-void reverseString(char str[]) {}
+void reverseString(char str[]) {
+    
+     return a; 
+    }
+void reverseString(char str[])
+{
+    int start = 0;
+    int end = strlen(str) - 1;
+
+    while (start < end)
+    {
+        char temp = str[start];
+        str[start] = str[end];
+        str[end] = temp;
+
+        start++;
+        end--;
+    }
+}
+
 int isOdd(int n) { return 0; }
 int isEven(int n)
 {
