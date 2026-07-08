@@ -99,6 +99,8 @@ int isPrime(int n)
 
 int power(int base, int exp) {
     int result = 1;
+    if (exp < 0)
+        return 0;
     for (int i = 1; i <= exp; i++) {
         result *= base;
     }
