@@ -1,5 +1,6 @@
 #include "functions.h"
 #include <string.h>
+
 int reverseNumber(int n)
 {
     int reverse = 0;
@@ -27,6 +28,7 @@ int sumDigits(int n)
     }
 
     return sum;
+
 }
 
 int countDigits(int n)
@@ -79,6 +81,7 @@ void reverseString(char str[])
 int isOdd(int n)
 {
     return n % 2 != 0;
+
 }
 int isEven(int n)
 {
@@ -121,6 +124,7 @@ int power(int base, int exp)
         return 0;
     for (int i = 1; i <= exp; i++)
     {
+
         result *= base;
     }
     return result;
@@ -133,3 +137,4 @@ int factorial(int n) {
     }
     return result;
 }
+
