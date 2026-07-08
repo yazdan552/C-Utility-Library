@@ -13,7 +13,22 @@ int reverseNumber(int n)
 
     return reverse;
 }
-int sumDigits(int n) { return 0; }
+int sumDigits(int n)
+{
+        
+    int sum=0;
+    if(n<0) n = -n;
+        
+    while (n>0)
+    {
+        int a = n%10;
+        sum += a;
+        n/=10;
+    }
+    
+    return sum;
+
+}
 
 int countDigits(int n)
 {
