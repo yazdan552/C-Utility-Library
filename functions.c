@@ -85,7 +85,7 @@ int isEven(int n)
 {
     return n % 2 == 0;
 }
-int power(int base, int exp) { return 0; }
+
 int lcm(int a, int b)
 {
     int max = (a > b) ? a : b;
@@ -113,4 +113,12 @@ int isPrime(int n)
             return 0;
     }
     return 1;
+}
+
+int power(int base, int exp) {
+    int result = 1;
+    for (int i = 1; i <= exp; i++) {
+        result *= base;
+    }
+    return result;
 }
