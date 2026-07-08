@@ -62,7 +62,10 @@ void reverseString(char str[])
     }
 }
 
-int isOdd(int n) { return 0; }
+int isOdd(int n) 
+{ 
+    return n % 2 !=0;
+}
 int isEven(int n)
 {
     return n % 2 == 0;
